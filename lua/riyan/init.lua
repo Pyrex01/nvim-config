@@ -1,0 +1,11 @@
+require("riyan.packer")
+require("riyan.remap")
+require("riyan.lspconfig")
+require("riyan.javaSetup")
+require("riyan.neogit")
+
+vim.cmd('set relativenumber')
+vim.cmd('highlight Normal guibg=none')
+vim.cmd('highlight NonText guibg=none')
+vim.cmd('highlight Normal ctermbg=none')
+vim.cmd('highlight NonText ctermbg=none')
