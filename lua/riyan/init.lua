@@ -3,6 +3,7 @@ require("riyan.remap")
 require("riyan.lspconfig")
 require("riyan.javaSetup")
 require("riyan.neogit")
+require("riyan.explorer")
 
 vim.cmd('set relativenumber')
 vim.cmd('highlight Normal guibg=none')
