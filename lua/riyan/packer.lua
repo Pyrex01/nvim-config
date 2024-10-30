@@ -14,13 +14,13 @@ return require('packer').startup(function(use)
 	use 'nvim-treesitter/nvim-treesitter'
 	use 'nvim-lua/plenary.nvim'
 	use 'mfussenegger/nvim-jdtls'
-	use({
-		'catppuccin/nvim',
-		as = 'catppuccin',
-		config = function()
-			vim.cmd('colorscheme catppuccin')
-		end
-	})
+--	use({
+--		'catppuccin/nvim',
+--		as = 'catppuccin',
+--		config = function()
+--			vim.cmd('colorscheme catppuccin')
+--		end
+--	})
 	use 'williamboman/mason.nvim'         -- LSP Installer
 	use 'williamboman/mason-lspconfig.nvim' -- Mason integration with lspconfig
 	use 'neovim/nvim-lspconfig'           -- LSP Configuration
@@ -30,5 +30,12 @@ return require('packer').startup(function(use)
 		require("toggleterm").setup()
 	end})
 	use 'NeogitOrg/neogit'
+	use ({"navarasu/onedark.nvim", config = function()
+		require('onedark').setup {
+			style = 'darker'
+		}
+		require('onedark').load()
+	end})
+	use 'ThePrimeagen/vim-be-good'
 end
 )
