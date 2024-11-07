@@ -10,11 +10,10 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' 
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 vim.keymap.set({ 'n', 'i', 'v', 'x', 's', 'o', 't', 'c' }, '<C-n>', '<ESC>' )
 
-vim.keymap.set('n', '<leader>e', function()
-	vim.cmd(':Ex')
-end)
-
+-- quit buffer
 vim.keymap.set('n', '<leader>q',':bd<CR>')
+-- Open java file generator
+vim.keymap.set('n', '<leader>jn',javad_tools.generator)
 
 -- Open/close terminal with <C-`> (Ctrl + backtick)
 vim.keymap.set('n', '<C-t>', ':ToggleTerm<CR>', { noremap = true, silent = true })
