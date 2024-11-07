@@ -37,5 +37,6 @@ return require('packer').startup(function(use)
 		require('onedark').load()
 	end})
 	use 'ThePrimeagen/vim-be-good'
+	use {'Pyrex01/javad-tools',config = function() require('javad-tools') end}
 end
 )

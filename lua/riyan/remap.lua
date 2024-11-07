@@ -1,4 +1,5 @@
 local builtin = require('telescope.builtin')
+local javad_tools = require('javad-tools')
 
 vim.g.mapleader = " "
 
