@@ -13,7 +13,7 @@ vim.keymap.set('n', '<leader>e', function()
 	vim.cmd(':Ex')
 end)
 
-vim.keymap.set('n', '<leader>q',':bd<CR>:Ex<CR>')
+vim.keymap.set('n', '<leader>q',':bd<CR>')
 
 -- Open/close terminal with <C-`> (Ctrl + backtick)
 vim.keymap.set('n', '<C-t>', ':ToggleTerm<CR>', { noremap = true, silent = true })
