@@ -1,4 +1,5 @@
 require("mason").setup()
+require('java').setup()
 local lspconfig = require('lspconfig')
 lspconfig.jdtls.setup {
 	settings = {

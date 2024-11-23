@@ -1,5 +1,5 @@
 local builtin = require('telescope.builtin')
-local javad_tools = require('javad-tools')
+-- local javad_tools = require('javad-tools')
 
 vim.g.mapleader = " "
 
@@ -13,7 +13,7 @@ vim.keymap.set({ 'n', 'i', 'v', 'x', 's', 'o', 't', 'c' }, '<C-n>', '<ESC>' )
 -- quit buffer
 vim.keymap.set('n', '<leader>q',':bd<CR>')
 -- Open java file generator
-vim.keymap.set('n', '<leader>jn',javad_tools.generator)
+-- vim.keymap.set('n', '<leader>jn',javad_tools.generator)
 
 -- Open/close terminal with <C-`> (Ctrl + backtick)
 vim.keymap.set('n', '<C-t>', ':ToggleTerm<CR>', { noremap = true, silent = true })

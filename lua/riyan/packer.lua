@@ -36,7 +36,15 @@ return require('packer').startup(function(use)
 		}
 		require('onedark').load()
 	end})
-	use 'ThePrimeagen/vim-be-good'
-	use 'Pyrex01/javad-tools'
+	use 'nvim-java/nvim-java'
+	use 'nvim-java/nvim-java-refactor'
+	use 'nvim-java/nvim-java-core'
+	use 'nvim-java/nvim-java-test'
+	use 'nvim-java/nvim-java-dap'
+	use 'JavaHello/spring-boot.nvim'
+	use 'nvim-java/lua-async'
+	use 'MunifTanjim/nui.nvim'
+	use 'nvim-java/nvim-java'
+	use 'mfussenegger/nvim-dap'
 end
 )
