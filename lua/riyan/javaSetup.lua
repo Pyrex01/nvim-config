@@ -1,5 +1,10 @@
-require("mason").setup()
-require('java').setup()
+require("mason").setup({
+	registries = {
+		"github:mason-org/mason-registry",
+		"github:nvim-java/mason-registry"
+	},
+})
+require('java').setup({})
 local lspconfig = require('lspconfig')
 lspconfig.jdtls.setup {
 	settings = {
