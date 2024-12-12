@@ -46,5 +46,6 @@ return require('packer').startup(function(use)
 	use 'MunifTanjim/nui.nvim'
 	use 'nvim-java/nvim-java'
 	use 'mfussenegger/nvim-dap'
+	use 'simrat39/rust-tools.nvim'
 end
 )
