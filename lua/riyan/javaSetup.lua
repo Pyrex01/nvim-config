@@ -1,5 +1,7 @@
 require("mason").setup()
+
 local lspconfig = require('lspconfig')
+
 lspconfig.jdtls.setup {
 	settings = {
 		java = {
@@ -21,6 +23,27 @@ lspconfig.jdtls.setup {
 		}
 	}
 }
+
+lspconfig.lua_ls.setup({
+  settings = {
+    Lua = {
+      runtime = {
+        version = "LuaJIT", -- Neovim's Lua version
+      },
+      diagnostics = {
+        globals = { "vim" }, -- Recognize 'vim' as a global variable
+      },
+      workspace = {
+        library = vim.api.nvim_get_runtime_file("", true), -- Neovim runtime files
+        checkThirdParty = false, -- Avoid unnecessary prompts
+      },
+      telemetry = {
+        enable = false, -- Disable telemetry
+      },
+    },
+  },
+})
+
 local cmp = require("cmp")
 
 cmp.setup({
