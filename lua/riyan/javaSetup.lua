@@ -47,11 +47,6 @@ lspconfig.lua_ls.setup({
 local cmp = require("cmp")
 
 cmp.setup({
-  snippet = {
-    expand = function(args)
-      vim.fn["vsnip#anonymous"](args.body) -- Or replace with 'luasnip' if using it
-    end,
-  },
   mapping = {
     ['<C-Space>'] = cmp.mapping.complete(), -- Trigger completion menu
     ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Confirm with Enter
